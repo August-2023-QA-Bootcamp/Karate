@@ -1,0 +1,10 @@
+{
+	"employeeSchema": {
+		"id": "#number",
+		"firstName": "#string",
+		"lastName": "#string",
+		"dob": "#string",
+		"fullName": "#string",
+		"age": "#string"
+	}
+}
