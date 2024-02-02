@@ -1,7 +1,7 @@
 function constants(){
 	return {
 		employeesEndpoint		: '/employees',
-		employeeEndpoint		: '/employees',
+		employeeEndpoint		: '/employees/{id}',
 		employeeLastNameSearch	: '/employees/search/{lastName}'
 	}
 }

@@ -3,7 +3,6 @@ Feature: DELETE Employee API Validation
 
   Background: 
     * url baseUrl
-    * path endpoint.employeeEndpoint
     * def helper = call read('classpath:helper/helper.feature@get-employees')
 
   #* def pathFun = call read('classpath:helper/constructPath.js')
@@ -13,7 +12,8 @@ Feature: DELETE Employee API Validation
     # grab ids
     * def id = ids[ids.length-1] 
     # grab a id for path variable
-    Given path id
+    #* def pathValue = constructPath(endpoint.employeeEndpoint, id)
+    Given path constructPath(endpoint.employeeEndpoint, id)
     # assign path variable
     When method DELETE
     # status validation

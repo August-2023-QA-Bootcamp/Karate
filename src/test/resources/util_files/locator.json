@@ -1,0 +1,7 @@
+{
+	"main_title":"#section1heading",
+	"zip":"#ssp-service-zip",
+	"auto_lob":"div[data-product='auto']",
+	"go_btn":"input[value='Go']",
+	"start_my_quote_btn":"//a[text()='Start My Quote']"
+}

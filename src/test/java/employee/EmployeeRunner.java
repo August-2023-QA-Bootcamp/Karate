@@ -10,7 +10,7 @@ public class EmployeeRunner
 	Karate test() 
 	{
 		return Karate.run()
-				.tags("@put-employee-feature")
+				.tags("@delete-employee-feature")
 				.relativeTo(getClass());
 	}
 }

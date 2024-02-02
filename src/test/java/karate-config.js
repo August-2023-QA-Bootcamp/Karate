@@ -5,7 +5,8 @@ function fn() {
     env = 'dev'; // a custom 'intelligent' default
   }
   var config = { // base config JSON
-    baseUrl: 'http://localhost:3000'
+    baseUrl: 'http://localhost:3000',
+    uiUrl:'https://www.geico.com/'
   };
   if (env == 'stage') {
     // over-ride only those that need to be
@@ -13,6 +14,9 @@ function fn() {
   } else if (env == 'e2e') {
     config.baseUrl = 'https://e2e-host/v1/auth';
   }
+  
+  // utils
+  config = karate.callSingle('classpath:helper/utils.js', config);
   
   // common constants
   config.endpoint = karate.callSingle('classpath:helper/constant.js');
